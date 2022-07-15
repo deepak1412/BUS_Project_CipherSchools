@@ -1,0 +1,22 @@
+# BUS_Project_CipherSchools
+
+package BusProject;
+
+import java.util.ArrayList;
+import java.util.List;
+public class LonginSignup {
+
+    UserOperation userOperation = new UserOperation();
+
+    public  void signup String signup( String name,long phone,String email,String street,String city,String state,String password){
+
+        if(userOperation.verifyEmail(email)){
+             return "Email already taken Signup unsucessfull";
+        }
+         Contact contact = new Contact( name,phone,email);
+         Address address = new Address( street,city,state);
+          user user = new user( contact,address,password)
+                 userOperation.addUser(user);
+        return  "signup sucessfull";
+    }
+

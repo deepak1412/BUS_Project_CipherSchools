@@ -1,0 +1,42 @@
+package BusProject;
+
+public class user {
+     private  Contact Contact;
+     private  Address address;
+     private  String password;
+
+     public  user(){
+
+     }
+     public user(BusProject.Contact contact, Address address, String password) {
+        Contact = contact;
+        this.address = address;
+        this.password = password;
+    }
+
+}
+
+    public BusProject.Contact getContact() {
+        return Contact;
+    }
+
+    public void setContact(BusProject.Contact contact) {
+        Contact = contact;
+    }
+
+    public BusProject.Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(BusProject.Address address) {
+        Address = address;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
